@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app:
+    image: 121661/test:1
+
+  database:
+    image: postgres:11-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+
